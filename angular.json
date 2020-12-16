@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "loulou-resume-front-end"
+    }
+  },
+  "defaultProject": "loulou-resume-front-end",
+  "cli": {
+    "analytics": "bb0295a6-44a6-4302-8ee1-3e3171aafcee"
+  }
 }
