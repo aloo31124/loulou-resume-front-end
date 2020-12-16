@@ -3,13 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "start": "node server.js",
-    "ng": "ng",        
     "postinstall": "ng build --aot --prod",
-    "heroku-postbuild": "ng build --prod",
+    "ng": "ng",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "engines": {
+    "node": "v10.16.0",
+    "npm": "6.9.0"
   },
   "private": true,
   "dependencies": {
@@ -47,9 +50,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
-  },
-  "engines": {
-    "node": "10.16.0",
-    "npm": "6.9.0"
   }
 }
