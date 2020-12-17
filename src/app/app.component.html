@@ -17,10 +17,9 @@
     <div class="title-h2">
       <h2>基本資料</h2>
     </div>    
-    <div class="personal-data-list">
-      <a>男性、未婚</a>
-      <a>生日:85/09/12</a>      
-      <a>專業:網頁開發與維護 (php、angular)</a>      
+    <div class="personal-data-list" *ngFor="let baseInfo of baseInfos">
+      <div *ngIf="baseInfo.personalDataName.trim()" ><a>{{ baseInfo.personalDataName }}:{{ baseInfo.personalDataValue }}</a></div>
+      <div *ngIf="! baseInfo.personalDataName.trim()" ><a>{{ baseInfo.personalDataValue }}</a></div>
     </div>
   </div>  
   <div class="personal-data-item">
