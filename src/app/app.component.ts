@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ export class AppComponent {
   constructor(private http: HttpClient){}
 
   ngOnInit():void{
-    const url = "http://127.0.0.1:8000/api/personalData/baseInfo";
+    //const url = "http://127.0.0.1:8000/api/personalData/baseInfo";
+    const url = "https://loulou-resume-back-end.herokuapp.com/api/personalData/baseInfo";
     this.http.get<any>(url).subscribe(baseInfos=> {
       this.baseInfos = baseInfos;
       console.log(baseInfos); // 印出取得 json 內容
