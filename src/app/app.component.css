@@ -248,3 +248,79 @@
         z-index: -1;
       }
 }
+
+
+.work-ability-container{    
+    margin:auto;    
+    margin-bottom: 0;
+    max-width: 1200px;
+    width : 100%;    
+}
+
+.work-ability-circle-img {
+    float:center;
+	width: 225px;
+	border-radius: 50%;
+	border: 5px solid rgb(255, 255, 255);
+}
+
+.work-ability-category{
+    margin:auto;    
+    margin-bottom: 100px;
+    max-width: 1200px;
+    width : 100%;        
+}
+@media screen and (min-width: 800px){
+    .work-ability-category{
+        display: flex;
+        align-items: center;
+    }
+
+    .work-ability-circle-img {
+        float:right;
+        width: 225px;
+        border-radius: 50%;
+        border: 5px solid rgb(255, 255, 255);
+    }        
+
+    .work-ability-category-left-container{       
+        padding: 25px;
+        width: 30%;
+    }
+
+    .work-ability-category-right-container{       
+        padding: 25px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .work-ability-category{
+        text-align:center;
+    }
+
+    .work-ability-category-left-container,
+    .work-ability-category-right-container{  
+        margin:auto; 
+        padding: 5px; 
+        width:80%;   
+    }
+}
+
+.work-ability-category h2{
+    color: rgb(102, 161, 255); 
+}
+
+.work-ability-category-item{
+    display: block;
+    background-color: white;
+    border: 3px solid rgb(176, 206, 255); 
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;   
+}
+
+.work-ability-category-item:hover{
+    background-color: rgb(50, 128, 240);  
+    color:white;
+}
