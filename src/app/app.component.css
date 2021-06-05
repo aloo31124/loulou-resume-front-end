@@ -84,10 +84,6 @@
     padding: 10px; 
 }
 
-.experience-time-line-ul{
-    padding:  100px 0 500px;
-}
-
 .experience-time-line-ul li{    
     box-sizing: border-box;
     padding: 20px 0;
@@ -140,6 +136,12 @@
 @media screen and (min-width: 800px){
     .experience-time-line-container{  
         max-width: 1200px;  
+    }
+
+    
+
+    .experience-time-line-ul{
+        padding:  100px 0 400px;
     }
 
     .experience-time-line-ul li{
@@ -202,20 +204,25 @@
 
 @media screen and (max-width: 800px){
 
+    .experience-time-line-ul{
+        padding:  100px 0 100px;
+    }
+
     
     .experience-time-line-ul li{
-        width: 80%;
+        width: 80%;          
+        left:60px;
     }
 
     .experience-time-line-ul li::after{
         content: '';
         position: absolute;
-        width: 1px;
+        width: 2px;
         height: 100%;
         background-color:#ccc;
         top:0px;
-        left:-50px;
         z-index: -1;
+        left:-15px;
     }
     
     
@@ -225,14 +232,12 @@
         width: 20px;
         height: 20px;
         border-radius:50px;
-        background-color: #aaa;
-    
-        z-index: 2;
-        left: -60px;
-    
+        background-color: #aaa;    
+        z-index: 2;    
         top: 0;
         bottom: 0;
-        margin: auto;
+        margin: auto;  
+        left:-25px;
       }
     
       .experience-time-line-ul h2::after{
@@ -244,15 +249,15 @@
         top: 0;
         bottom: 0;
         margin: auto;
-        left: -50px;
         z-index: -1;
+        left:-10px
       }
 }
 
 
 .work-ability-container{    
     margin:auto;    
-    margin-bottom: 0;
+    margin-bottom: 20px;
     max-width: 1200px;
     width : 100%;    
 }
@@ -266,7 +271,7 @@
 
 .work-ability-category{
     margin:auto;    
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     max-width: 1200px;
     width : 100%;        
 }
@@ -323,4 +328,50 @@
 .work-ability-category-item:hover{
     background-color: rgb(50, 128, 240);  
     color:white;
+}
+
+
+
+.autobiograp-card-container{    
+    margin:auto;    
+    margin-bottom: 20px;
+    max-width: 1200px;
+    width : 100%;    
+}
+
+
+.autobiograp-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    width: 80%;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 25px auto;
+}
+
+.autobiograp-card-head {        
+    padding: 5px 20px;    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:rgb(102, 161, 255); 
+    color:#ffff;
+}
+
+
+.autobiograp-card-body {
+    padding: 25px 25px;
+}
+
+
+
+.page-footer{
+    background-color: rgb(50, 128, 240);  
+    margin-top:50px;
+    width : 100%;  
+    padding: 20px 20px
+}
+
+.page-footer-col{
+    color:#ffff;
+    margin:auto;
+    width : 50%; 
 }
