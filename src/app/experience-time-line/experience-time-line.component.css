@@ -54,9 +54,37 @@
     font-weight: 100;
 }
 
+.experience-time-line-ul div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    position: relative;
+}
+
+.experience-time-line-ul div:before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius:0;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-width: 20px;
+    border-style: solid; 
+    border-color: transparent transparent #aaa transparent;
+}
 
 
 @media screen and (min-width: 800px){
+
+        
+    .experience-time-line-ul div:before{        
+        right: -20px;
+    }
+
+
     .experience-time-line-container{  
         max-width: 1200px;  
     }
@@ -131,6 +159,10 @@
         padding:  100px 0 100px;
     }
 
+            
+    .experience-time-line-ul div:before{        
+        left: 25px;
+    }
     
     .experience-time-line-ul li{
         width: 80%;          
