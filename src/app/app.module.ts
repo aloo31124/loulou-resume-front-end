@@ -5,19 +5,28 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ExperienceTimeLineComponent } from './experience-time-line/experience-time-line.component'
+import { ExperienceTimeLineComponent } from './experience-time-line/experience-time-line.component';
+import { ExperienceTimeLineDialogComponent } from './experience-time-line/experience-time-line-dialog/experience-time-line-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExperienceTimeLineComponent
+    ExperienceTimeLineComponent,
+    ExperienceTimeLineDialogComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule, // 需要再 BrowserModule 之後!
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ExperienceTimeLineDialogComponent
+  ]
 })
 export class AppModule { }

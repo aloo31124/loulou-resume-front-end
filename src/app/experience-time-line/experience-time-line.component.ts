@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ExperienceTimeLineDialogComponent } from './experience-time-line-dialog/experience-time-line-dialog.component';
+
 
 @Component({
   selector: 'app-experience-time-line',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceTimeLineComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
+  }
+
+  showDialog() {
+    this.dialog.open(ExperienceTimeLineDialogComponent,{width:'500px',height:'700px'});
   }
 
 }
